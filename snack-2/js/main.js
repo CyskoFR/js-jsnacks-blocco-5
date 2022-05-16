@@ -65,9 +65,11 @@ for (let i = 0; i < zucchine.length; i++) {
     if (zucchine[i].lunghezzaCm < 15) {
         zucchineMinori15.push(zucchine[i]);
         totalePesoMinori15 += zucchine[i].pesoG;
+        console.log("peso zucchina minore 15cm", zucchine[i].pesoG)
     } else {
         zucchineMaggiori15.push(zucchine[i]);
         totalePesoMaggiori15 += zucchine[i].pesoG;
+        console.log("peso zucchina maggiore 15cm", zucchine[i].pesoG)
     }
 }
 
