@@ -1,8 +1,6 @@
 // Crea un array di 10 oggetti che rappresentano una zucchina, indicando per ognuna varietà, peso e lunghezza.
 // Calcola quanto pesano tutte le zucchine.
 
-const containerZucchine = document.getElementById("box-zucchine");
-
 const zucchine = [
     {
         varietá: "var1",
@@ -59,6 +57,6 @@ const zucchine = [
 let totale = 0;
 
 for (let i = 0; i < zucchine.length; i++) {
-    totale = totale + zucchine[i].pesoG
+    totale += zucchine[i].pesoG
 }
 console.log(totale)
