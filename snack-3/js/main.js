@@ -56,19 +56,24 @@ const automobili = [
     },
 ];
 
-const autoBenzina = [];
-const autoDiesel = [];
-const autoRestanti = [];
+// const autoBenzina = [];
+// const autoDiesel = [];
+// const autoRestanti = [];
 
-for (let i = 0; i < automobili.length; i++) {
-    if (automobili[i].alimentazione === "benzina") {
-        autoBenzina.push(automobili[i]);
-    } else if (automobili[i].alimentazione === "diesel") {
-        autoDiesel.push(automobili[i]);
-    } else {
-        autoRestanti.push(automobili[i]);
-    }
-}
+// for (let i = 0; i < automobili.length; i++) {
+//     if (automobili[i].alimentazione === "benzina") {
+//         autoBenzina.push(automobili[i]);
+//     } else if (automobili[i].alimentazione === "diesel") {
+//         autoDiesel.push(automobili[i]);
+//     } else {
+//         autoRestanti.push(automobili[i]);
+//     }
+// }
+
+const autoBenzina = automobili.filter(e => e.alimentazione === "benzina");
+const autoDiesel = automobili.filter(e => e.alimentazione === "diesel");
+const autoRestanti = automobili.filter(e => e.alimentazione !== "benzina" && e.alimentazione !== "diesel");
+
 console.log("autoBenzina", autoBenzina)
 console.log("autoDiesel", autoDiesel)
 console.log("autoRestanti", autoRestanti)
